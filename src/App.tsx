@@ -76,20 +76,6 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Imagen del producto */}
-            <div className="mb-12 relative">
-              <div className="absolute inset-0 bg-red-600 blur-[100px] opacity-10 rounded-full"></div>
-              <img 
-                src="./hero-image.png" 
-                alt="Sistema Completo Anti-Procrastinación + IA" 
-                className="w-full max-w-4xl mx-auto rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 relative z-10"
-                onError={(e) => {
-                  // Fallback in case the image is not uploaded yet
-                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/business/1200/600";
-                }}
-              />
-            </div>
-
             <p className="text-red-600 font-bold tracking-widest uppercase text-sm md:text-base mb-6">
               Atención: Emprendedores y Creadores que quieren resultados RÁPIDOS
             </p>
